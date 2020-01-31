@@ -1,0 +1,18 @@
+Выполняет парсинг предметов (https://steamcommunity.com/market/search) и сохраняет результат в файл csv.
+
+Запуск:
+php parser.php ид_приложения
+
+
+
+например:
+
+https://steamcommunity.com/market/search?appid=730
+730 - Counter-Strike: Global Offensive
+
+php parser.php 730
+
+
+Steam блокирует по ip когда много запросов.
+Пауза между запросами = 45 сек.
+Таким образом удалось спарсить 14800 предметов, прмерно за 2 часа.
